@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://mybox.trenger.ro/code/macwatch-current.tar.gz
+# Source0-md5:	9eceaf45b02761758585acb4b29d2294
 URL:		http://mybox.trenger.ro/
 BuildRequires:	libpcap-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
