@@ -5,7 +5,7 @@ Version:	0.2.7
 Release:	1
 License:	GPL
 Group:		Applications/Networking
-Source0:	%{name}-current.tar.gz
+Source0:	http://mybox.trenger.ro/code/macwatch-current.tar.gz
 URL:		http://mybox.trenger.ro/
 BuildRequires:	libpcap-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,10 +28,16 @@ z wiêcej ni¿ jednym adresem IP, a potrzeba monitorowaæ sumaryczny
 ruch.
 
 %prep
-%setup -q -n %{name}-%{version}-4
+%setup -q -n %{name}-%{version}-5
 
 %build
+%{__libtoolize}
+%{__aclocal}
+%{__autoheader}
+%{__autoconf}
+%{__automake}
 %configure
+
 %{__make}
 
 %install
