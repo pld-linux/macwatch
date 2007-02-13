@@ -1,5 +1,5 @@
 Summary:	Count in and out-bytes from one or more given ethernet devices
-Summary(pl.UTF-8):   Zliczanie bajtów we/wy na urządzeniach ethernet
+Summary(pl.UTF-8):	Zliczanie bajtów we/wy na urządzeniach ethernet
 Name:		macwatch
 Version:	0.2.7
 Release:	1
